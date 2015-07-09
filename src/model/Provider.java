@@ -7,14 +7,10 @@ public class Provider {
 
     private Strategy strategy;
 
-    public Provider(Strategy strategy)
+    public Provider()
     {
-        this.strategy = strategy;
+
     }
 
-    public void setStrategy(Strategy strategy)
-    {
-        this.strategy = strategy;
-    }
 
 }
