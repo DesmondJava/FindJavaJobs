@@ -1,27 +1,24 @@
 package main;
 
-import model.Provider;
-
-import java.util.Arrays;
+import model.Model;
 
 /**
  * Created by Администратор on 09.07.2015.
  */
 public class Controller {
 
-    private Provider[] providers;
+    private Model model;
 
-    public Controller(Provider... provider) {
-        if(provider.length == 0){
+    public Controller(Model model)
+    {
+        if(model == null){
             throw new IllegalArgumentException();
         }
-        this.providers = provider;
+        this.model = model;
     }
 
-    @Override
-    public String toString() {
-        return "Controller{" +
-                "providers=" + Arrays.toString(providers) +
-                '}';
+    public void onCitySelect(String cityName){
+        model.selectCity(cityName);
     }
+
 }
