@@ -1,3 +1,5 @@
+package main;
+
 import model.Provider;
 
 import java.util.Arrays;
